@@ -1,0 +1,40 @@
+body{
+  background-color: gray;
+}
+h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin:10;
+}
+.image{
+  text-align: center;
+  margin:auto;
+  position:relative;
+  max-width:800px;
+}
+.slideshow{
+  width:800px;
+  height:400px;
+}
+.logo{
+  width:50px;
+  height:50px;
+  margin-right: 10px;
+}
+.heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.music{
+  background-color: lightslategray;
+  color: white;
+  height: auto;
+}
+.video{
+  display: flex;
+  align-items: center;
+}
+.tribute{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

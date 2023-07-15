@@ -1,0 +1,57 @@
+<html>
+<title>TRIBUTE PAGE</title>
+<link rel="stylesheet" href="tribute.css"></link>
+<body>
+<audio id="avicii">
+<source src="C:\\Users\\user\\OneDrive\\Desktop\\the_nights.mp3">
+</audio>
+<div class="heading">
+<img class="logo" src="logo.jpeg">
+<h1 >AVICII-Swedish DJ</h1>
+</div>
+<div class="image">
+<img class="slideshow" src="img1.jpeg">
+<img class="slideshow" src="img2.jpeg">
+<img class="slideshow" src="img3.jpeg" >
+<p class="tribute">Avicii, your music soared higher than the sky, becoming the anthem of countless souls. From infectious energy to soul-stirring beauty, your tracks transcended boundaries, infusing electronic beats with heartfelt emotion. You pushed the boundaries of dance music, weaving genres and collaborating with artists, leaving an indelible mark on music history.</p>
+
+<button class="music" onclick="playaudio()" style="width:20%">Play Music</button>
+<button class="music" onclick="stopaudio()" style="width:20%">Stop Music</button>
+<p class="tribute">Behind the bright lights, you carried a weight few understood. You courageously opened up about your struggles, inspiring us to confront our own demons and prioritize mental health. Your decision to step away from touring sparked a dialogue, reminding us that the journey defines us as much as the music we create.</p>
+
+<p class="tribute">Though your life was tragically cut short, your music continues to bring joy and solace. Your spirit lives on in each beat, connecting, healing, and inspiring us. We celebrate your brilliance, passion, and unspoken truths. Your legacy will forever be etched in our hearts. </p>
+<p class="tribute">Rest in peace, dear Avicii.</p>
+<p class="tribute">Here is one among his many popular songs.</p>
+<div class="video" style="position: relative; height: 0; padding-bottom: 56.25%;">
+  <iframe style="position: absolute; left: 0; top: 0; width: 100%; height: 80%;" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x75gz8k?autoplay=1" allowfullscreen title="Dailymotion Video Player" allow="autoplay"></iframe>
+</div>
+
+</body>
+</div>
+<script>
+function playaudio(){
+	var audio = document.getElementById("avicii");
+	audio.play();
+}
+function stopaudio(){
+	var audio = document.getElementById("avicii");
+	audio.pause();
+}
+ document.addEventListener("DOMContentLoaded", function() {
+ 	var slideIndex = 0;
+ 	slideShow();
+ 	function slideShow() {
+      		var slides = document.getElementsByClassName("slideshow");
+      		for (var i = 0; i < slides.length; i++) {
+        		slides[i].style.display = "none";
+      		}
+      	slideIndex++;
+      	if (slideIndex > slides.length) {
+        	slideIndex = 1;
+      	}
+      	slides[slideIndex - 1].style.display = "block";
+      	setTimeout(slideShow, 2000);
+    	}
+});
+</script>
+</html>
