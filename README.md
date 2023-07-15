@@ -1,1 +1,1 @@
-# OIBSIP
+This is an HTML tribute page dedicated to Avicii, the Swedish DJ. It includes images, a heartfelt tribute to his impact on the music world, buttons to play/stop an audio track (The Nights by Avicii), and a video displaying one of his popular songs. The page also has a slideshow of images and utilizes CSS for styling.
